@@ -8,7 +8,7 @@ def establish_connection():
         conn=mysql.connector.connect(
             host='localhost',
             user='root',
-            password='sandeep123@M',
+            password='********',
             database='PythonLearningDB'
         )
         if conn.is_connected():
@@ -54,5 +54,6 @@ def close_connection():
     except Error as e:
         print(f"Error closing connection:{e}")
     
+
 
 
