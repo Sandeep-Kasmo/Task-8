@@ -59,7 +59,7 @@ def main():
     #perform aggregations
 
     summary=aggregations(customer_orders_df,'customer_id','name')
-
+    summary = summary.reset_index()
     print(summary.sort_values(by='customer_id'))
 
 
@@ -75,6 +75,7 @@ def main():
     #close the connection
 
     close_connection()
+
 
 
 
